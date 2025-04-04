@@ -18,7 +18,7 @@ def car_details_view(request, car_id):
 
 def sales_by_car(request, car_id):
     try:
-        # получите авто и его продажи
+        # получите авто и его продажи ....
         template_name = 'main/sales.html'
         return render(request, template_name, {})  # передайте необходимый контекст
     except Car.DoesNotExist:
